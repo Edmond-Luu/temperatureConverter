@@ -1,0 +1,22 @@
+#mainSection {
+    position: absolute;
+    padding: 1vh;
+    border: 2px solid orange;
+    box-shadow: 5px 5px 10px rgb(255, 141, 2);
+    background-color: rgb(200, 200, 245);
+    position: absolute;
+    top: 30%;
+    left: 42%;
+}
+
+#convertButton {
+    margin-top: 10px;
+}
+
+#results {
+    margin-top: 10px;
+}
+
+#input {
+    max-width: 150px;
+}
