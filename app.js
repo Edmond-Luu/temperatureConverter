@@ -16,10 +16,10 @@ selectorBox.addEventListener('change', () => {
     boxValue = selectorBox.value
     switch (boxValue) {
         case 'cel':
-            titleText.innerText = "Celsius to Farenheit";
+            titleText.innerText = "Celsius to Fahrenheit";
             break;
         case 'far':
-            titleText.innerText = "Farenheit to Celsius"
+            titleText.innerText = "Fahrenheit to Celsius"
             break;
     }
 
@@ -31,9 +31,9 @@ function cToF() {
     if (!parseInt(celsius)) {
         celsius = 0;
     }
-    const farenheit = ((celsius * 9) / 5) + 32;
+    const fahrenheit = ((celsius * 9) / 5) + 32;
     const kelvin = (parseFloat(celsius) + 273.15).toFixed(2);
-    const conversionResult = `${celsius} °C ≈ ${farenheit} °F ≈ ${kelvin} K`;
+    const conversionResult = `${celsius} °C ≈ ${fahrenheit} °F ≈ ${kelvin} K`;
     const data = document.createElement("h3");
     data.innerText = conversionResult;
     results.append(data);
@@ -41,13 +41,13 @@ function cToF() {
 }
 
 function fToC() {
-    let farenheit = input.value;
-    if (!parseInt(farenheit)) {
-        farenheit = 0;
+    let fahrenheit = input.value;
+    if (!parseInt(fahrenheit)) {
+        fahrenheit = 0;
     }
-    const celsius = (((5 * (farenheit - 32)) / 9)).toFixed(2);
+    const celsius = (((5 * (fahrenheit - 32)) / 9)).toFixed(2);
     const kelvin = (parseFloat(celsius) + 273.15).toFixed(2);
-    const conversionResult = `${farenheit} °F ≈ ${celsius} °C ≈ ${kelvin} K`;
+    const conversionResult = `${fahrenheit} °F ≈ ${celsius} °C ≈ ${kelvin} K`;
     const data = document.createElement("h3");
     data.innerText = conversionResult;
     results.append(data);
